@@ -21,7 +21,7 @@ function CommunicationWidget() {
     {
       name: 'Email',
       icon: FiMail,
-      href: 'mailto:sarahsarina0@gmail.com',
+      href: 'mailto:neatifycleaningservice@gmail.com',
       description: 'Send us an email'
     },
     {

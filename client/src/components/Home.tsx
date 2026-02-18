@@ -216,7 +216,7 @@ const Home = () => {
               Call Now: +251 937 383 931
             </a>
             <a 
-              href="mailto:sarahsarina0@gmail.com" 
+              href="mailto:neatifycleaningservice@gmail.com" 
               className="border-2 border-white text-white hover:bg-white hover:text-amber-600 px-8 py-4 rounded-tr-lg rounded-bl-lg rounded-tl-none rounded-br-none font-semibold text-lg transition-all"
             >
               Email Us
