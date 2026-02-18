@@ -1,6 +1,33 @@
-import { FiMail, FiPhone, FiMapPin, FiFacebook, FiTwitter, FiInstagram, FiLinkedin } from 'react-icons/fi';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { FiMail, FiPhone, FiMapPin, FiSend } from 'react-icons/fi';
+import { FaTelegram, FaFacebook, FaInstagram, FaLinkedin, FaTiktok } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
+  const [email, setEmail] = useState('');
+  const [subscribed, setSubscribed] = useState(false);
+
+  const socialLinks = [
+    { icon: FaTelegram, href: '#', label: 'Telegram' },
+    { icon: FaFacebook, href: '#', label: 'Facebook' },
+    { icon: FaInstagram, href: '#', label: 'Instagram' },
+    { icon: FaLinkedin, href: '#', label: 'LinkedIn' },
+    { icon: FaTiktok, href: '#', label: 'TikTok' },
+    { icon: FaXTwitter, href: '#', label: 'Twitter/X' },
+  ];
+
+  const handleSubscribe = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (email) {
+      // Handle subscription logic here
+      console.log('Subscribed:', email);
+      setSubscribed(true);
+      setEmail('');
+      setTimeout(() => setSubscribed(false), 3000);
+    }
+  };
+
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -8,42 +35,29 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <img 
-              src="/Neatfy logo.png" 
+              src="/logo bg.png" 
               alt="Neatify Logo" 
-              className="h-10 w-auto mb-4"
+              className="h-24 md:h-32 w-auto mb-2"
             />
             <p className="text-gray-400 leading-relaxed">
               Professional cleaning services specializing in post-construction cleanup and general cleaning solutions. Your trusted partner for a spotless space.
             </p>
             <div className="flex space-x-4 pt-2">
-              <a 
-                href="#" 
-                className="text-gray-400 hover:text-amber-500 transition-colors"
-                aria-label="Facebook"
-              >
-                <FiFacebook className="h-5 w-5" />
-              </a>
-              <a 
-                href="#" 
-                className="text-gray-400 hover:text-amber-500 transition-colors"
-                aria-label="Twitter"
-              >
-                <FiTwitter className="h-5 w-5" />
-              </a>
-              <a 
-                href="#" 
-                className="text-gray-400 hover:text-amber-500 transition-colors"
-                aria-label="Instagram"
-              >
-                <FiInstagram className="h-5 w-5" />
-              </a>
-              <a 
-                href="#" 
-                className="text-gray-400 hover:text-amber-500 transition-colors"
-                aria-label="LinkedIn"
-              >
-                <FiLinkedin className="h-5 w-5" />
-              </a>
+              {socialLinks.map((social, index) => {
+                const Icon = social.icon;
+                return (
+                  <a
+                    key={index}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-amber-500 transition-colors p-1 hover:scale-110 transform duration-200"
+                    aria-label={social.label}
+                  >
+                    <Icon className="h-5 w-5" />
+                  </a>
+                );
+              })}
             </div>
           </div>
 
@@ -52,24 +66,24 @@ const Footer = () => {
             <h3 className="text-white font-semibold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#home" className="text-gray-400 hover:text-amber-500 transition-colors">
+                <Link to="/" className="text-gray-400 hover:text-amber-500 transition-colors">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#services" className="text-gray-400 hover:text-amber-500 transition-colors">
+                <Link to="/services" className="text-gray-400 hover:text-amber-500 transition-colors">
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#about" className="text-gray-400 hover:text-amber-500 transition-colors">
+                <Link to="/about" className="text-gray-400 hover:text-amber-500 transition-colors">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#contact" className="text-gray-400 hover:text-amber-500 transition-colors">
+                <Link to="/contact" className="text-gray-400 hover:text-amber-500 transition-colors">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -79,24 +93,24 @@ const Footer = () => {
             <h3 className="text-white font-semibold text-lg mb-4">Services</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#services" className="text-gray-400 hover:text-amber-500 transition-colors">
+                <Link to="/services" className="text-gray-400 hover:text-amber-500 transition-colors">
                   Post-Construction Cleaning
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#services" className="text-gray-400 hover:text-amber-500 transition-colors">
+                <Link to="/services" className="text-gray-400 hover:text-amber-500 transition-colors">
                   General Cleaning
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#services" className="text-gray-400 hover:text-amber-500 transition-colors">
+                <Link to="/services" className="text-gray-400 hover:text-amber-500 transition-colors">
                   Deep Cleaning
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#services" className="text-gray-400 hover:text-amber-500 transition-colors">
+                <Link to="/services" className="text-gray-400 hover:text-amber-500 transition-colors">
                   Commercial Cleaning
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -120,11 +134,55 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <FiMapPin className="h-5 w-5 text-amber-500 mt-0.5 flex-shrink-0" />
                 <span className="text-gray-400">
-                  123 Cleaning Street<br />
-                  City, State 12345
+                  Addis Ababa, Ethiopia
                 </span>
               </li>
             </ul>
+          </div>
+        </div>
+
+        {/* Subscription Section */}
+        <div className="border-t border-gray-800 pt-8 mt-8 mb-8">
+          <div className="max-w-2xl mx-auto">
+            <div className="text-center mb-6">
+              <h3 className="text-2xl font-bold text-white mb-2">Subscribe to Our Newsletter</h3>
+              <p className="text-gray-400">
+                Stay updated with our latest cleaning tips, special offers, and company news
+              </p>
+            </div>
+            <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-3">
+              <div className="flex-1">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Enter your email address"
+                  required
+                  className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all"
+                />
+              </div>
+              <button
+                type="submit"
+                className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white px-8 py-3 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2 whitespace-nowrap"
+              >
+                {subscribed ? (
+                  <>
+                    <FiMail className="h-5 w-5" />
+                    Subscribed!
+                  </>
+                ) : (
+                  <>
+                    <FiSend className="h-5 w-5" />
+                    Subscribe
+                  </>
+                )}
+              </button>
+            </form>
+            {subscribed && (
+              <p className="text-center text-amber-500 mt-3 text-sm">
+                Thank you for subscribing! Check your email for confirmation.
+              </p>
+            )}
           </div>
         </div>
 

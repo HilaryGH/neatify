@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { FiCheckCircle, FiShield, FiClock, FiAward, FiHome, FiDroplet } from 'react-icons/fi';
 import CommunicationWidget from './CommunicationWidget';
 
@@ -15,18 +16,18 @@ const Home = () => {
                 Professional Post-Construction & General Cleaning Services
               </h1>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <a 
-                  href="#contact" 
+                <Link 
+                  to="/contact" 
                   className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-tr-lg rounded-bl-lg rounded-tl-none rounded-br-none font-semibold text-lg transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-center"
                 >
                   Get Free Quote
-                </a>
-                <a 
-                  href="#services" 
+                </Link>
+                <Link 
+                  to="/services" 
                   className="border-2 border-amber-500 text-amber-600 hover:bg-amber-50 px-8 py-4 rounded-tr-lg rounded-bl-lg rounded-tl-none rounded-br-none font-semibold text-lg transition-all text-center"
                 >
                   Our Services
-                </a>
+                </Link>
               </div>
               <div className="flex items-center gap-8 pt-6">
                 <div>
