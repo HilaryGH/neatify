@@ -10,7 +10,7 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: FaTelegram, href: '#', label: 'Telegram' },
-    { icon: FaFacebook, href: '#', label: 'Facebook' },
+    { icon: FaFacebook, href: 'https://facebook.com/NeatifyCleaningServicesAddisAbaba', label: 'Facebook' },
     { icon: FaInstagram, href: '#', label: 'Instagram' },
     { icon: FaLinkedin, href: '#', label: 'LinkedIn' },
     { icon: FaTiktok, href: '#', label: 'TikTok' },
@@ -35,9 +35,9 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <img 
-              src="/logo bg.png" 
+              src="/logo bg2.png" 
               alt="Neatify Logo" 
-              className="h-24 md:h-32 w-auto mb-2"
+              className="h-20 md:h-28 w-auto mb-2"
             />
             <p className="text-gray-400 leading-relaxed">
               Professional cleaning services specializing in post-construction cleanup and general cleaning solutions. Your trusted partner for a spotless space.
@@ -51,7 +51,7 @@ const Footer = () => {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-amber-500 transition-colors p-1 hover:scale-110 transform duration-200"
+                    className="text-gray-400 hover:text-blue-500 transition-colors p-1 hover:scale-110 transform duration-200"
                     aria-label={social.label}
                   >
                     <Icon className="h-5 w-5" />
@@ -66,22 +66,22 @@ const Footer = () => {
             <h3 className="text-white font-semibold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-gray-400 hover:text-amber-500 transition-colors">
+                <Link to="/" className="text-gray-400 hover:text-blue-500 transition-colors">
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="text-gray-400 hover:text-amber-500 transition-colors">
+                <Link to="/services" className="text-gray-400 hover:text-blue-500 transition-colors">
                   Services
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-gray-400 hover:text-amber-500 transition-colors">
+                <Link to="/about" className="text-gray-400 hover:text-blue-500 transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-gray-400 hover:text-amber-500 transition-colors">
+                <Link to="/contact" className="text-gray-400 hover:text-blue-500 transition-colors">
                   Contact
                 </Link>
               </li>
@@ -93,22 +93,22 @@ const Footer = () => {
             <h3 className="text-white font-semibold text-lg mb-4">Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/services" className="text-gray-400 hover:text-amber-500 transition-colors">
+                <Link to="/services" className="text-gray-400 hover:text-blue-500 transition-colors">
                   Post-Construction Cleaning
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="text-gray-400 hover:text-amber-500 transition-colors">
+                <Link to="/services" className="text-gray-400 hover:text-blue-500 transition-colors">
                   General Cleaning
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="text-gray-400 hover:text-amber-500 transition-colors">
+                <Link to="/services" className="text-gray-400 hover:text-blue-500 transition-colors">
                   Deep Cleaning
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="text-gray-400 hover:text-amber-500 transition-colors">
+                <Link to="/services" className="text-gray-400 hover:text-blue-500 transition-colors">
                   Commercial Cleaning
                 </Link>
               </li>
@@ -120,19 +120,19 @@ const Footer = () => {
             <h3 className="text-white font-semibold text-lg mb-4">Contact Us</h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
-                <FiPhone className="h-5 w-5 text-amber-500 mt-0.5 flex-shrink-0" />
-                <a href="tel:+251937383931" className="text-gray-400 hover:text-amber-500 transition-colors">
+                <FiPhone className="h-5 w-5 text-blue-500 mt-0.5 flex-shrink-0" />
+                <a href="tel:+251937383931" className="text-gray-400 hover:text-blue-500 transition-colors">
                   +251 937 383 931
                 </a>
               </li>
               <li className="flex items-start gap-3">
-                <FiMail className="h-5 w-5 text-amber-500 mt-0.5 flex-shrink-0" />
-                <a href="mailto:neatifycleaningservice@gmail.com" className="text-gray-400 hover:text-amber-500 transition-colors">
+                <FiMail className="h-5 w-5 text-blue-500 mt-0.5 flex-shrink-0" />
+                <a href="mailto:neatifycleaningservice@gmail.com" className="text-gray-400 hover:text-blue-500 transition-colors">
                   neatifycleaningservice@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-3">
-                <FiMapPin className="h-5 w-5 text-amber-500 mt-0.5 flex-shrink-0" />
+                <FiMapPin className="h-5 w-5 text-blue-500 mt-0.5 flex-shrink-0" />
                 <span className="text-gray-400">
                   Addis Ababa, Ethiopia
                 </span>
@@ -158,12 +158,12 @@ const Footer = () => {
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email address"
                   required
-                  className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                 />
               </div>
               <button
                 type="submit"
-                className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white px-8 py-3 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2 whitespace-nowrap"
+                className="bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white px-8 py-3 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2 whitespace-nowrap"
               >
                 {subscribed ? (
                   <>
@@ -179,7 +179,7 @@ const Footer = () => {
               </button>
             </form>
             {subscribed && (
-              <p className="text-center text-amber-500 mt-3 text-sm">
+              <p className="text-center text-blue-500 mt-3 text-sm">
                 Thank you for subscribing! Check your email for confirmation.
               </p>
             )}
@@ -193,10 +193,10 @@ const Footer = () => {
               © {new Date().getFullYear()} Neatify. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-amber-500 transition-colors">
+              <a href="#" className="text-gray-400 hover:text-blue-500 transition-colors">
                 Privacy Policy
               </a>
-              <a href="#" className="text-gray-400 hover:text-amber-500 transition-colors">
+              <a href="#" className="text-gray-400 hover:text-blue-500 transition-colors">
                 Terms of Service
               </a>
             </div>

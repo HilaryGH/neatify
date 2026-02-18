@@ -76,13 +76,13 @@ const Contact = () => {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-600 via-blue-500 to-amber-500 pt-24 pb-16 md:pt-32 md:pb-24">
+      <section className="bg-gradient-to-br from-blue-100 via-white to-blue-200 pt-24 pb-16 md:pt-32 md:pb-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-white">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900">
               Get In Touch
             </h1>
-            <p className="text-xl md:text-2xl text-blue-50 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto">
               We're here to help transform your space. Reach out and let's discuss your cleaning needs.
             </p>
           </div>
@@ -120,7 +120,7 @@ const Contact = () => {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                     placeholder="John Doe"
                   />
                 </div>
@@ -136,7 +136,7 @@ const Contact = () => {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -152,7 +152,7 @@ const Contact = () => {
                     required
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                     placeholder="+251 937 383 931"
                   />
                 </div>
@@ -166,7 +166,7 @@ const Contact = () => {
                     name="service"
                     value={formData.service}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                   >
                     <option value="">Select a service</option>
                     <option value="post-construction">Post-Construction Cleaning</option>
@@ -187,7 +187,7 @@ const Contact = () => {
                     rows={5}
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all resize-none"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
                     placeholder="Tell us about your cleaning needs..."
                   />
                 </div>
@@ -195,7 +195,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white px-8 py-4 rounded-tr-lg rounded-bl-lg rounded-tl-none rounded-br-none font-semibold text-lg transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2 ${
+                  className={`w-full bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white px-8 py-4 rounded-tr-lg rounded-bl-lg rounded-tl-none rounded-br-none font-semibold text-lg transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2 ${
                     isSubmitting ? 'opacity-70 cursor-not-allowed' : ''
                   }`}
                 >
@@ -221,32 +221,32 @@ const Contact = () => {
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Contact Information</h2>
               <div className="space-y-6 mb-8">
-                <div className="flex items-start gap-4 p-6 bg-gradient-to-br from-blue-50 to-amber-50 rounded-xl">
-                  <div className="bg-blue-500 p-3 rounded-lg">
+                <div className="flex items-start gap-4 p-6 bg-gradient-to-br from-blue-50 to-blue-50 rounded-xl">
+                  <div className="bg-gradient-to-br from-blue-300 to-blue-400 p-3 rounded-lg">
                     <FiPhone className="h-6 w-6 text-white" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
-                    <a href="tel:+251937383931" className="text-gray-600 hover:text-amber-600 transition-colors">
+                    <a href="tel:+251937383931" className="text-gray-600 hover:text-blue-600 transition-colors">
                       +251 937 383 931
                     </a>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-6 bg-gradient-to-br from-amber-50 to-blue-50 rounded-xl">
-                  <div className="bg-amber-500 p-3 rounded-lg">
+                <div className="flex items-start gap-4 p-6 bg-gradient-to-br from-blue-50 to-blue-50 rounded-xl">
+                  <div className="bg-gradient-to-br from-blue-300 to-blue-400 p-3 rounded-lg">
                     <FiMail className="h-6 w-6 text-white" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                    <a href="mailto:neatifycleaningservice@gmail.com" className="text-gray-600 hover:text-amber-600 transition-colors">
+                    <a href="mailto:neatifycleaningservice@gmail.com" className="text-gray-600 hover:text-blue-600 transition-colors">
                       neatifycleaningservice@gmail.com
                     </a>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-6 bg-gradient-to-br from-blue-50 to-amber-50 rounded-xl">
-                  <div className="bg-blue-500 p-3 rounded-lg">
+                <div className="flex items-start gap-4 p-6 bg-gradient-to-br from-blue-50 to-blue-50 rounded-xl">
+                  <div className="bg-gradient-to-br from-blue-300 to-blue-400 p-3 rounded-lg">
                     <FiMapPin className="h-6 w-6 text-white" />
                   </div>
                   <div>
@@ -255,8 +255,8 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-6 bg-gradient-to-br from-amber-50 to-blue-50 rounded-xl">
-                  <div className="bg-amber-500 p-3 rounded-lg">
+                <div className="flex items-start gap-4 p-6 bg-gradient-to-br from-blue-50 to-blue-50 rounded-xl">
+                  <div className="bg-gradient-to-br from-blue-300 to-blue-400 p-3 rounded-lg">
                     <FiClock className="h-6 w-6 text-white" />
                   </div>
                   <div>
@@ -269,17 +269,17 @@ const Contact = () => {
               </div>
 
               {/* Quick Actions */}
-              <div className="bg-gradient-to-br from-blue-500 to-amber-500 p-6 rounded-xl text-white">
+              <div className="bg-gradient-to-br from-blue-200 via-blue-300 to-blue-400 p-6 rounded-xl text-gray-900">
                 <h3 className="font-semibold text-lg mb-4 flex items-center gap-2">
                   <FiMessageCircle className="h-5 w-5" />
                   Quick Response
                 </h3>
-                <p className="text-blue-50 mb-4">
+                <p className="text-gray-700 mb-4">
                   Need immediate assistance? Call us now or send us a message. We typically respond within 24 hours.
                 </p>
                 <a
                   href="tel:+251937383931"
-                  className="inline-block bg-white text-amber-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition-all shadow-md hover:shadow-lg"
+                  className="inline-block bg-white text-blue-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition-all shadow-md hover:shadow-lg"
                 >
                   Call Now
                 </a>
@@ -297,9 +297,9 @@ const Contact = () => {
             <p className="text-gray-600">Located in the heart of Addis Ababa</p>
           </div>
           <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-            <div className="h-96 bg-gradient-to-br from-blue-100 to-amber-100 flex items-center justify-center">
+            <div className="h-96 bg-gradient-to-br from-blue-100 to-blue-100 flex items-center justify-center">
               <div className="text-center">
-                <FiMapPin className="h-16 w-16 text-amber-500 mx-auto mb-4" />
+                <FiMapPin className="h-16 w-16 text-blue-500 mx-auto mb-4" />
                 <p className="text-gray-600 text-lg">Addis Ababa, Ethiopia</p>
                 <p className="text-gray-500 text-sm mt-2">Map integration can be added here</p>
               </div>
@@ -309,24 +309,24 @@ const Contact = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-amber-500 to-blue-600">
+      <section className="py-20 bg-gradient-to-r from-blue-200 via-blue-300 to-blue-400">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
             Ready to Get Started?
           </h2>
-          <p className="text-xl text-amber-50 mb-8">
+          <p className="text-xl text-gray-700 mb-8">
             Don't wait—contact us today for a free quote and consultation
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="tel:+251937383931" 
-              className="bg-white text-amber-600 hover:bg-gray-100 px-8 py-4 rounded-tr-lg rounded-bl-lg rounded-tl-none rounded-br-none font-semibold text-lg transition-all shadow-lg hover:shadow-xl"
+              className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-tr-lg rounded-bl-lg rounded-tl-none rounded-br-none font-semibold text-lg transition-all shadow-lg hover:shadow-xl"
             >
               Call: +251 937 383 931
             </a>
             <a 
               href="mailto:neatifycleaningservice@gmail.com" 
-              className="border-2 border-white text-white hover:bg-white hover:text-amber-600 px-8 py-4 rounded-tr-lg rounded-bl-lg rounded-tl-none rounded-br-none font-semibold text-lg transition-all"
+              className="border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white px-8 py-4 rounded-tr-lg rounded-bl-lg rounded-tl-none rounded-br-none font-semibold text-lg transition-all"
             >
               Email Us
             </a>

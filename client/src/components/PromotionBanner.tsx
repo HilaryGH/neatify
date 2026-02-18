@@ -6,7 +6,7 @@ const PromotionBanner = () => {
 
   const socialLinks = [
     { icon: FaTelegram, href: '#', label: 'Telegram' },
-    { icon: FaFacebook, href: '#', label: 'Facebook' },
+    { icon: FaFacebook, href: 'https://facebook.com/NeatifyCleaningServicesAddisAbaba', label: 'Facebook' },
     { icon: FaInstagram, href: '#', label: 'Instagram' },
     { icon: FaLinkedin, href: '#', label: 'LinkedIn' },
     { icon: FaTiktok, href: '#', label: 'TikTok' },
@@ -14,7 +14,7 @@ const PromotionBanner = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-r from-amber-500 via-amber-600 to-amber-700 text-white relative z-50">
+    <div className="bg-gradient-to-r from-blue-200 via-blue-300 to-blue-400 text-gray-900 relative z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-1.5 md:py-2">
           {/* Promotion Text - Left Side */}
@@ -25,7 +25,7 @@ const PromotionBanner = () => {
               Get <span className="font-bold">20% OFF</span> on your first post-construction cleaning! 
               <a 
                 href="#contact" 
-                className="underline font-semibold ml-1 hover:text-amber-100 transition-colors"
+                className="underline font-semibold ml-1 hover:text-blue-100 transition-colors"
               >
                 Book Now
               </a>

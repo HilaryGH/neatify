@@ -41,11 +41,11 @@ function CommunicationWidget() {
       {/* Communication Options Panel */}
       {isOpen && (
         <div className="absolute bottom-20 right-0 mb-4 animate-fade-in-up">
-          <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-xl p-3 min-w-[240px] border border-gray-200">
+          <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-xl p-4 min-w-[260px] border border-gray-200">
             <div className="flex justify-end mb-2">
               <button
                 onClick={() => setIsOpen(false)}
-                className="text-gray-400 hover:text-amber-600 transition-all duration-200 p-1 rounded-full"
+                className="text-gray-400 hover:text-blue-600 transition-all duration-200 p-1 rounded-full"
                 aria-label="Close"
               >
                 <FiX className="w-4 h-4" />
@@ -66,13 +66,13 @@ function CommunicationWidget() {
                     }}
                     target={option.href.startsWith('http') ? '_blank' : undefined}
                     rel={option.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                    className="group flex items-center gap-3 p-2.5 rounded-lg bg-transparent hover:bg-amber-50 text-gray-700 hover:text-amber-600 transition-all duration-200"
+                    className="group flex items-center gap-3 p-3 rounded-lg bg-transparent hover:bg-blue-50 text-gray-700 hover:text-blue-600 transition-all duration-200"
                   >
-                    <div className="w-8 h-8 rounded-lg bg-amber-100 flex items-center justify-center flex-shrink-0 group-hover:bg-amber-500 transition-colors duration-200">
-                      <Icon className="w-4 h-4 text-amber-600 group-hover:text-white transition-colors duration-200" />
+                    <div className="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0 group-hover:bg-gradient-to-br group-hover:from-blue-400 group-hover:to-blue-500 transition-colors duration-200">
+                      <Icon className="w-5 h-5 text-blue-600 group-hover:text-white transition-colors duration-200" />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <div className="font-medium text-sm leading-tight group-hover:text-amber-600 transition-colors duration-200">{option.name}</div>
+                      <div className="font-medium text-sm leading-tight group-hover:text-blue-600 transition-colors duration-200">{option.name}</div>
                       <div className="text-xs text-gray-500 leading-tight">{option.description}</div>
                     </div>
                   </a>
@@ -86,15 +86,15 @@ function CommunicationWidget() {
       {/* Floating Action Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`group relative w-12 h-12 rounded-full bg-amber-500 hover:bg-amber-600 text-white shadow-lg flex items-center justify-center transition-all duration-300 transform hover:scale-110 hover:shadow-xl ${
+        className={`group relative w-14 h-14 rounded-full bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white shadow-lg flex items-center justify-center transition-all duration-300 transform hover:scale-110 hover:shadow-xl ${
           isOpen ? 'rotate-45' : 'rotate-0'
         }`}
         aria-label="Contact us"
       >
         {isOpen ? (
-          <FiX className="w-5 h-5 transition-transform duration-300 relative z-10" />
+          <FiX className="w-6 h-6 transition-transform duration-300 relative z-10" />
         ) : (
-          <FiMessageCircle className="w-5 h-5 transition-transform duration-300 relative z-10" />
+          <FiMessageCircle className="w-6 h-6 transition-transform duration-300 relative z-10" />
         )}
       </button>
     </div>

@@ -13,12 +13,18 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #f59e0b;
+  background: #3b82f6; /* blue-500 */
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #d97706;
+  background: #2563eb; /* blue-600 */
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3b82f6 #f1f1f1; /* blue-500 and track color */
 }
 
 /* Animation for communication widget */
