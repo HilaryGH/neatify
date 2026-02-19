@@ -14,7 +14,7 @@ const PromotionBanner = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-r from-blue-200 via-blue-300 to-blue-400 text-gray-900 relative z-50">
+    <div className="bg-gradient-to-r from-blue-600 via-blue-600 to-blue-600 text-gray-900 relative z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-1.5 md:py-2">
           {/* Promotion Text - Left Side */}

@@ -76,7 +76,7 @@ const Contact = () => {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-100 via-white to-blue-200 pt-24 pb-16 md:pt-32 md:pb-24">
+      <section className="bg-gradient-to-br from-blue-600 via-white to-blue-600 pt-24 pb-16 md:pt-32 md:pb-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-white">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900">
@@ -221,8 +221,8 @@ const Contact = () => {
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Contact Information</h2>
               <div className="space-y-6 mb-8">
-                <div className="flex items-start gap-4 p-6 bg-gradient-to-br from-blue-50 to-blue-50 rounded-xl">
-                  <div className="bg-gradient-to-br from-blue-300 to-blue-400 p-3 rounded-lg">
+                <div className="flex items-start gap-4 p-6 bg-gradient-to-br from-blue-600 to-blue-600 rounded-xl">
+                  <div className="bg-gradient-to-br from-blue-600 to-blue-600 p-3 rounded-lg">
                     <FiPhone className="h-6 w-6 text-white" />
                   </div>
                   <div>
@@ -233,8 +233,8 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-6 bg-gradient-to-br from-blue-50 to-blue-50 rounded-xl">
-                  <div className="bg-gradient-to-br from-blue-300 to-blue-400 p-3 rounded-lg">
+                <div className="flex items-start gap-4 p-6 bg-gradient-to-br from-blue-600 to-blue-600 rounded-xl">
+                  <div className="bg-gradient-to-br from-blue-600 to-blue-600 p-3 rounded-lg">
                     <FiMail className="h-6 w-6 text-white" />
                   </div>
                   <div>
@@ -245,8 +245,8 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-6 bg-gradient-to-br from-blue-50 to-blue-50 rounded-xl">
-                  <div className="bg-gradient-to-br from-blue-300 to-blue-400 p-3 rounded-lg">
+                <div className="flex items-start gap-4 p-6 bg-gradient-to-br from-blue-600 to-blue-600 rounded-xl">
+                  <div className="bg-gradient-to-br from-blue-600 to-blue-600 p-3 rounded-lg">
                     <FiMapPin className="h-6 w-6 text-white" />
                   </div>
                   <div>
@@ -255,8 +255,8 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-6 bg-gradient-to-br from-blue-50 to-blue-50 rounded-xl">
-                  <div className="bg-gradient-to-br from-blue-300 to-blue-400 p-3 rounded-lg">
+                <div className="flex items-start gap-4 p-6 bg-gradient-to-br from-blue-600 to-blue-600 rounded-xl">
+                  <div className="bg-gradient-to-br from-blue-600 to-blue-600 p-3 rounded-lg">
                     <FiClock className="h-6 w-6 text-white" />
                   </div>
                   <div>
@@ -269,7 +269,7 @@ const Contact = () => {
               </div>
 
               {/* Quick Actions */}
-              <div className="bg-gradient-to-br from-blue-200 via-blue-300 to-blue-400 p-6 rounded-xl text-gray-900">
+              <div className="bg-gradient-to-br from-blue-600 via-blue-600 to-blue-600 p-6 rounded-xl text-gray-900">
                 <h3 className="font-semibold text-lg mb-4 flex items-center gap-2">
                   <FiMessageCircle className="h-5 w-5" />
                   Quick Response
@@ -297,7 +297,7 @@ const Contact = () => {
             <p className="text-gray-600">Located in the heart of Addis Ababa</p>
           </div>
           <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-            <div className="h-96 bg-gradient-to-br from-blue-100 to-blue-100 flex items-center justify-center">
+            <div className="h-96 bg-gradient-to-br from-blue-600 to-blue-600 flex items-center justify-center">
               <div className="text-center">
                 <FiMapPin className="h-16 w-16 text-blue-500 mx-auto mb-4" />
                 <p className="text-gray-600 text-lg">Addis Ababa, Ethiopia</p>
@@ -309,7 +309,7 @@ const Contact = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-200 via-blue-300 to-blue-400">
+      <section className="py-20 bg-gradient-to-r from-blue-600 via-blue-600 to-blue-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
             Ready to Get Started?

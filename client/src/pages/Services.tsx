@@ -6,8 +6,8 @@ const Services = () => {
       icon: FiHome,
       title: 'Post-Construction Cleaning',
       description: 'Comprehensive cleaning service designed to transform construction sites into pristine, move-in-ready spaces.',
-      color: 'from-blue-300 to-blue-400',
-      iconBg: 'bg-gradient-to-br from-blue-300 to-blue-400',
+      color: 'from-blue-600 to-blue-600',
+      iconBg: 'bg-gradient-to-br from-blue-600 to-blue-600',
       features: [
         'Debris and dust removal',
         'Window and glass cleaning',
@@ -24,8 +24,8 @@ const Services = () => {
       icon: FiDroplet,
       title: 'General Cleaning',
       description: 'Regular maintenance cleaning to keep your home or office spotless with flexible scheduling options.',
-      color: 'from-blue-300 to-blue-400',
-      iconBg: 'bg-gradient-to-br from-blue-300 to-blue-400',
+      color: 'from-blue-600 to-blue-600',
+      iconBg: 'bg-gradient-to-br from-blue-600 to-blue-600',
       features: [
         'Deep cleaning services',
         'Regular maintenance cleaning',
@@ -42,8 +42,8 @@ const Services = () => {
       icon: FiShield,
       title: 'Deep Cleaning',
       description: 'Intensive cleaning service that reaches every corner, perfect for spring cleaning or special occasions.',
-      color: 'from-blue-300 to-blue-400',
-      iconBg: 'bg-gradient-to-br from-blue-300 to-blue-400',
+      color: 'from-blue-600 to-blue-600',
+      iconBg: 'bg-gradient-to-br from-blue-600 to-blue-600',
       features: [
         'Baseboard and corner cleaning',
         'Inside cabinet and drawer cleaning',
@@ -60,8 +60,8 @@ const Services = () => {
       icon: FiTrendingUp,
       title: 'Commercial Cleaning',
       description: 'Professional cleaning solutions for offices, retail spaces, and commercial properties.',
-      color: 'from-blue-300 to-blue-400',
-      iconBg: 'bg-gradient-to-br from-blue-300 to-blue-400',
+      color: 'from-blue-600 to-blue-600',
+      iconBg: 'bg-gradient-to-br from-blue-600 to-blue-600',
       features: [
         'Office space cleaning',
         'Restroom maintenance',
@@ -79,7 +79,7 @@ const Services = () => {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-100 via-white to-blue-200 pt-24 pb-16 md:pt-32 md:pb-24">
+      <section className="bg-gradient-to-br from-blue-600 via-white to-blue-600 pt-24 pb-16 md:pt-32 md:pb-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-white">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900">
@@ -133,7 +133,7 @@ const Services = () => {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-blue-50">
+      <section className="py-20 bg-gradient-to-br from-blue-600 to-blue-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -146,7 +146,7 @@ const Services = () => {
 
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="bg-gradient-to-br from-blue-200 to-blue-300 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+              <div className="bg-gradient-to-br from-blue-600 to-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <span className="text-2xl font-bold text-white">1</span>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Consultation</h3>
@@ -156,7 +156,7 @@ const Services = () => {
             </div>
 
             <div className="text-center">
-              <div className="bg-gradient-to-br from-blue-200 to-blue-300 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+              <div className="bg-gradient-to-br from-blue-600 to-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <span className="text-2xl font-bold text-white">2</span>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Quote</h3>
@@ -166,7 +166,7 @@ const Services = () => {
             </div>
 
             <div className="text-center">
-              <div className="bg-gradient-to-br from-blue-200 to-blue-300 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+              <div className="bg-gradient-to-br from-blue-600 to-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <span className="text-2xl font-bold text-white">3</span>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Service</h3>
@@ -176,7 +176,7 @@ const Services = () => {
             </div>
 
             <div className="text-center">
-              <div className="bg-gradient-to-br from-blue-200 to-blue-300 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+              <div className="bg-gradient-to-br from-blue-600 to-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <span className="text-2xl font-bold text-white">4</span>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Inspection</h3>
@@ -192,7 +192,7 @@ const Services = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-gradient-to-br from-blue-200 via-blue-300 to-blue-400 p-8 rounded-2xl text-gray-900 shadow-xl">
+            <div className="bg-gradient-to-br from-blue-600 via-blue-600 to-blue-600 p-8 rounded-2xl text-gray-900 shadow-xl">
               <FiStar className="h-10 w-10 mb-4" />
               <h3 className="text-2xl font-bold mb-4">Premium Quality</h3>
               <p className="text-gray-700">
@@ -200,7 +200,7 @@ const Services = () => {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-blue-200 via-blue-300 to-blue-400 p-8 rounded-2xl text-gray-900 shadow-xl">
+            <div className="bg-gradient-to-br from-blue-600 via-blue-600 to-blue-600 p-8 rounded-2xl text-gray-900 shadow-xl">
               <FiClock className="h-10 w-10 mb-4" />
               <h3 className="text-2xl font-bold mb-4">Flexible Scheduling</h3>
               <p className="text-gray-700">
@@ -208,7 +208,7 @@ const Services = () => {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-blue-200 via-blue-300 to-blue-400 p-8 rounded-2xl text-gray-900 shadow-xl">
+            <div className="bg-gradient-to-br from-blue-600 via-blue-600 to-blue-600 p-8 rounded-2xl text-gray-900 shadow-xl">
               <FiShield className="h-10 w-10 mb-4" />
               <h3 className="text-2xl font-bold mb-4">Insured & Bonded</h3>
               <p className="text-gray-700">
@@ -220,7 +220,7 @@ const Services = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-200 via-blue-300 to-blue-400">
+      <section className="py-20 bg-gradient-to-r from-blue-600 via-blue-600 to-blue-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
             Ready to Get Started?

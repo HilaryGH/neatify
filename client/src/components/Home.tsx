@@ -7,7 +7,7 @@ const Home = () => {
     <div className="w-full">
       <CommunicationWidget />
       {/* Hero Section */}
-      <section id="home" className="bg-gradient-to-br from-blue-50 via-white to-blue-50 pt-8 md:pt-12 pb-16 md:pb-24 relative overflow-hidden">
+      <section id="home" className="bg-gradient-to-br from-blue-600 via-white to-blue-600 pt-8 md:pt-12 pb-16 md:pb-24 relative overflow-hidden">
         {/* Sprinkle Effect - Cleanliness */}
         <div className="absolute top-8 right-10 md:top-12 md:right-20 opacity-60 animate-pulse">
           <FiStar className="w-6 h-6 md:w-8 md:h-8 text-blue-400 drop-shadow-lg" style={{ filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.2))' }} />
@@ -38,7 +38,7 @@ const Home = () => {
                 </div>
                 <div>
                   <div className="text-2xl md:text-3xl font-bold text-blue-600">100%</div>
-                  <div className="text-xs md:text-sm text-gray-600">Satisfaction</div>
+                  <div className="text-xs md:text-sm text-gray-600">Clean Guaranteed</div>
                 </div>
                 <div>
                   <div className="text-2xl md:text-3xl font-bold text-blue-600">24/7</div>
@@ -73,9 +73,9 @@ const Home = () => {
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             {/* Post-Construction Cleaning */}
-            <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-blue-100">
+            <div className="bg-gradient-to-br from-blue-600 to-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-blue-600">
               <div className="flex items-center gap-4 mb-6">
-                <div className="bg-gradient-to-br from-blue-300 to-blue-400 p-4 rounded-xl">
+                <div className="bg-gradient-to-br from-blue-600 to-blue-600 p-4 rounded-xl">
                   <FiHome className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900">Post-Construction Cleaning</h3>
@@ -108,9 +108,9 @@ const Home = () => {
             </div>
 
             {/* General Cleaning */}
-            <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-blue-100">
+            <div className="bg-gradient-to-br from-blue-600 to-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-blue-600">
               <div className="flex items-center gap-4 mb-6">
-                <div className="bg-gradient-to-br from-blue-300 to-blue-400 p-4 rounded-xl">
+                <div className="bg-gradient-to-br from-blue-600 to-blue-600 p-4 rounded-xl">
                   <FiDroplet className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900">General Cleaning</h3>
@@ -146,7 +146,7 @@ const Home = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+      <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -159,7 +159,7 @@ const Home = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <FiShield className="h-8 w-8 text-blue-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Insured & Bonded</h3>
@@ -169,7 +169,7 @@ const Home = () => {
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <FiAward className="h-8 w-8 text-blue-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Expert Team</h3>
@@ -179,7 +179,7 @@ const Home = () => {
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <FiClock className="h-8 w-8 text-blue-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Flexible Scheduling</h3>
@@ -189,10 +189,10 @@ const Home = () => {
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <FiCheckCircle className="h-8 w-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">100% Satisfaction</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Clean Guaranteed</h3>
               <p className="text-gray-600">
                 We guarantee our work and won't stop until you're completely satisfied
               </p>
@@ -202,7 +202,7 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section id="contact" className="py-20 bg-gradient-to-r from-blue-200 via-blue-300 to-blue-400">
+      <section id="contact" className="py-20 bg-gradient-to-r from-blue-600 via-blue-600 to-blue-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
             Ready to Transform Your Space?

@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-100 via-white to-blue-200 pt-24 pb-16 md:pt-32 md:pb-24">
+      <section className="bg-gradient-to-br from-blue-600 via-white to-blue-600 pt-24 pb-16 md:pt-32 md:pb-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-white">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900">
@@ -37,7 +37,7 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-blue-50 to-blue-50 p-8 rounded-2xl shadow-xl">
+            <div className="bg-gradient-to-br from-blue-600 to-blue-600 p-8 rounded-2xl shadow-xl">
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
                   <div className="text-4xl font-bold text-blue-600 mb-2">500+</div>
@@ -53,7 +53,7 @@ const About = () => {
                 </div>
                 <div className="text-center">
                   <div className="text-4xl font-bold text-blue-600 mb-2">100%</div>
-                  <div className="text-gray-600">Satisfaction Rate</div>
+                  <div className="text-gray-600">Clean Guaranteed</div>
                 </div>
               </div>
             </div>
@@ -62,7 +62,7 @@ const About = () => {
       </section>
 
       {/* Mission & Values */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+      <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -75,7 +75,7 @@ const About = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
-              <div className="bg-gradient-to-br from-blue-200 to-blue-300 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+              <div className="bg-gradient-to-br from-blue-600 to-blue-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
                 <FiTarget className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
@@ -85,7 +85,7 @@ const About = () => {
             </div>
 
             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
-              <div className="bg-gradient-to-br from-blue-200 to-blue-300 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+              <div className="bg-gradient-to-br from-blue-600 to-blue-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
                 <FiHeart className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Values</h3>
@@ -110,12 +110,12 @@ const About = () => {
             </div>
 
             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
-              <div className="bg-gradient-to-br from-blue-200 to-blue-300 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+              <div className="bg-gradient-to-br from-blue-600 to-blue-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
                 <FiAward className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Promise</h3>
               <p className="text-gray-600 leading-relaxed">
-                We guarantee 100% satisfaction with every service. If you're not completely happy, we'll return to make it right—no questions asked.
+                We guarantee clean guaranteed with every service. If you're not completely happy, we'll return to make it right—no questions asked.
               </p>
             </div>
           </div>
@@ -133,7 +133,7 @@ const About = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="bg-gradient-to-br from-blue-200 to-blue-300 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+              <div className="bg-gradient-to-br from-blue-600 to-blue-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <FiUsers className="h-10 w-10 text-white" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Expert Team</h3>
@@ -143,7 +143,7 @@ const About = () => {
             </div>
 
             <div className="text-center">
-              <div className="bg-gradient-to-br from-blue-200 to-blue-300 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+              <div className="bg-gradient-to-br from-blue-600 to-blue-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <FiAward className="h-10 w-10 text-white" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Quality Assured</h3>
@@ -153,7 +153,7 @@ const About = () => {
             </div>
 
             <div className="text-center">
-              <div className="bg-gradient-to-br from-blue-200 to-blue-300 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+              <div className="bg-gradient-to-br from-blue-600 to-blue-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <FiCheckCircle className="h-10 w-10 text-white" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Reliable Service</h3>
@@ -163,7 +163,7 @@ const About = () => {
             </div>
 
             <div className="text-center">
-              <div className="bg-gradient-to-br from-blue-200 to-blue-300 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+              <div className="bg-gradient-to-br from-blue-600 to-blue-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <FiHeart className="h-10 w-10 text-white" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Customer First</h3>
@@ -176,7 +176,7 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-200 via-blue-300 to-blue-400">
+      <section className="py-20 bg-gradient-to-r from-blue-600 via-blue-600 to-blue-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
             Ready to Experience the Neatify Difference?
